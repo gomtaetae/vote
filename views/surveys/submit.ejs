@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사결과</title>
+</head>
+<body>
+    <h2 align="center">설문 조사 결과</h2>
+    <form align="center">
+        <table>
+            남자 : <%= count[0] + count[1] %><br/>
+            여자 : <%= count[2] + count[3] %><br/>
+            호랑이 : <%= count[0] + count[2] %><br/>
+            코끼리 : <%= count[1] + count[3] %><br/>
+            <hr><br/>
+            남자 -> 호랑이 : <%= count[0] %><br/>
+            남자 -> 코끼리 : <%= count[1] %><br/>
+            여자 -> 호랑이 : <%= count[2] %><br/>
+            여자 -> 코끼리 : <%= count[3] %><br/>
+        </table>
+        <b align="center"><a href='javascript:history.go(-1)'>다시</b>
+    </form>
+    <br>
+    
+    
+</body>
+</html>
