@@ -1,32 +1,189 @@
-body {
+.body1 {
   font-family: 'Open Sans', sans-serif;
-}
-.breadcrumb-item {
-  font-size: 0.8em !important;
-}
-.ellipsis{
-  display: block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  background-color: rgb(20, 20, 20);
+  color : #9eeb0f
 }
 
-.board-table {
-  table-layout: fixed;
-}
-.board-table .author,
-.board-table .date {
-  width: 100px;
+.body2 {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(29, 29, 29);
+  color : #e844ee
 }
 
-.post-body{
-  white-space: pre-line;
-}
-.post-info{
-  font-size: 0.8em;
+.a1 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #54fdb7, #ffef09, #ff9100, #54fdb7);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index:1;
 }
 
-.user-form {
-  width: 400px;
+.a1:hover {
+  animation: animate 8s linear infinite;
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}
+
+.a1:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #54fdb7, #ffef09, #ff9100, #54fdb7);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.a1:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+
+.a2 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index:1;
+}
+
+.a2:hover {
+  animation: animate 8s linear infinite;
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}
+
+.a2:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.a2:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+.a3 {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #f441a5, #8940ff, #02fcef, #f441a5);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index:1;
+}
+
+.a3:hover {
+  animation: animate 8s linear infinite;
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}
+
+.a3:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #f441a5, #8940ff, #02fcef, #f441a5);
+  background-size: 400%; 
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.a3:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
 }

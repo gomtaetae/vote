@@ -3,25 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <title>설문조사결과</title>
+    <%- include('../partials/head') %>
 </head>
-<body>
+<body class="body1">
+    <%- include('../partials/nav') %>
     <h2 align="center">설문 조사 결과</h2>
-    <form align="center">
-        <table>
-            남자 : <%= count[0] + count[1] %><br/>
-            여자 : <%= count[2] + count[3] %><br/>
-            호랑이 : <%= count[0] + count[2] %><br/>
-            코끼리 : <%= count[1] + count[3] %><br/>
-            <hr><br/>
-            남자 -> 호랑이 : <%= count[0] %><br/>
-            남자 -> 코끼리 : <%= count[1] %><br/>
-            여자 -> 호랑이 : <%= count[2] %><br/>
-            여자 -> 코끼리 : <%= count[3] %><br/>
+    <div class="container">
+        <table align="center" class="table table-hover">
+            <thead class="thead dark">
+                <tr>
+                    <th>선택값</th>
+                    <th>선택한 횟수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>남자</td>
+                    <td><%= count[0] + count[1] %></td>
+                </tr>
+                <tr>
+                    <td>여자</td>
+                    <td><%= count[2] + count[3] %></td>
+                </tr>
+                <tr>
+                    <td>호랑이</td>
+                    <td><%= count[0] + count[2] %></td>
+                </tr>
+                <tr>
+                    <td>코끼리</td>
+                    <td><%= count[1] + count[3] %></td>
+                </tr>
+            </tbody>
+            <thead class="thead light">
+                <tr>
+                    <th>성별 & 선택한 동물</th>
+                    <th>총 선택 횟수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>남자 & 호랑이</td>
+                    <td><%= count[0] %></td>
+                </tr>
+                <tr>
+                    <td>남자 & 코끼리</td>
+                    <td><%= count[1] %></td>
+                </tr>
+                <tr>
+                    <td>여자 & 호랑이</td>
+                    <td><%= count[2] %></td>
+                </tr>
+                <tr>
+                    <td>여자 & 코끼리</td>
+                    <td><%= count[3] %></td>
+                </tr>
+            </tbody>
         </table>
-        <b align="center"><a href='javascript:history.go(-1)'>다시</b>
-    </form>
-    <br>
+        
+    
+    </div>
+    <div align="center">
+        <a class="a1" href="#" onclick="location.href='/'">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home
+        </a>
+    </div>
     
     
 </body>

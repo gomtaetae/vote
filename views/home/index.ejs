@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>투표</title>
+    <title>설문 조사</title>
+    <%- include('../partials/head') %>
 </head>
-<body>
+<body class="body2">
+    <%- include('../partials/nav') %>
+
     <h2 align="center">설문 조사</h2>
-    <form action="/surveys/submit" method="post">
+    <form name="surv" action="/surveys/submit" method="post">
         <table align="center">
             <tr>
                 <td>성별 : </td>
@@ -21,20 +24,26 @@
                 <td>
                     <input type="radio" name="animal" value="호랑이" checked="checked">호랑이
                     <input type="radio" name="animal" value="코끼리">코끼리
-                    
+
                 </td>
             </tr>
-            <tr>
-                <tr align="center">
-                    <td>
-                        <input type="submit" value="전송"> 
-                    </td>
-                    <td>
-                        <input type="reset" value="취소">
-                    </td>
-                </tr>
-            </tr>
         </table>
-    </form>    
+    </form>
+    <div align="center">    
+        <a class="a2" href="javascript:document.surv.submit();">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Send
+        </a>
+        <a class="a3" href="#" onclick="location.href='/'">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Cancle
+        </a>
+    </div>
 </body>
 </html>

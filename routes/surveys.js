@@ -58,7 +58,6 @@ router.get('/submit', async function(req, res){
                     db.countDocuments({gender:"여자", animal:"코끼리"}, (err,female2)=>{
                         arr.push(female2);
                         res.render('surveys/submit',{count:arr})
-                        console.log(arr[0]);
                     })
                 })
             })        
