@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" type="text/css" href="/css/master.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -12,11 +11,12 @@
     <%- include('../partials/head') %>
 </head>
 <body class="body1">
+    <div class="container2">
     <%- include('../partials/nav') %>
     <h2 align="center">설문 조사 결과</h2>
     <div class="container">
         <table align="center" class="table table-hover">
-            <thead class="thead dark">
+            <thead>
                 <tr>
                     <th>선택값</th>
                     <th>선택한 횟수</th>
@@ -40,7 +40,7 @@
                     <td><%= count[1] + count[3] %></td>
                 </tr>
             </tbody>
-            <thead class="thead light">
+            <thead>
                 <tr>
                     <th>성별 & 선택한 동물</th>
                     <th>총 선택 횟수</th>
@@ -77,6 +77,7 @@
             Home
         </a>
     </div>
+</div>
     
     
 </body>

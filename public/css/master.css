@@ -1,6 +1,6 @@
 .body1 {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(36, 35, 35);
   color : #9eeb0f
 }
 
@@ -12,8 +12,8 @@
 
 
 .container2 {
-  position:absolute;
-    top:30%; left:50%;
+  position: relative;
+    top:300px; left:50%;
     transform: translate(-50%, -50%);
   
 }
@@ -22,15 +22,14 @@
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    
-  
+
 
 }
 
 
 .a1 {
   position: absolute;
-  top: 70%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -125,8 +124,8 @@
   content: '';
   position: absolute;
   top: 110px;
-  left: -10px;
-  right: 220px;
+  left: 250px;
+  right: 470px;
   bottom: -5px;
   z-index: -1;
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
@@ -179,8 +178,8 @@
   content: '';
   position: absolute;
   top: 110px;
-  left: 210px;
-  right: -5px;
+  left: 470px;
+  right: 250px;
   bottom: -5px;
   z-index: -1;
   background: linear-gradient(90deg, #f441a5, #8940ff, #02fcef, #f441a5);
