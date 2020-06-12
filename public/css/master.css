@@ -89,6 +89,8 @@
 
 
 .a2 {
+  position: absolute;
+  left:38%;
   width: 200px;
   text-align: center;
   line-height: 60px;
@@ -123,9 +125,9 @@
 .a2:before{
   content: '';
   position: absolute;
-  top: 110px;
-  left: 250px;
-  right: 470px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
   bottom: -5px;
   z-index: -1;
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
@@ -143,6 +145,8 @@
 
 
 .a3 {
+  position: absolute;
+  left: 50%;
   width: 200px;
   text-align: center;
   line-height: 60px;
@@ -177,9 +181,9 @@
 .a3:before{
   content: '';
   position: absolute;
-  top: 110px;
-  left: 470px;
-  right: 250px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
   bottom: -5px;
   z-index: -1;
   background: linear-gradient(90deg, #f441a5, #8940ff, #02fcef, #f441a5);
